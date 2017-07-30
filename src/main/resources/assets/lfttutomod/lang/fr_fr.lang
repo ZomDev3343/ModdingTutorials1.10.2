@@ -1,2 +1,8 @@
 item.iron_gear.name=Engrenage En Fer
+
+item.iron_bolt.name=Boulon En Fer
+item.steel_bolt.name=Boulon En Acier
+item.stone_bolt.name=Boulon En Pierre
+item.golden_bolt.name=Boulon En Or
+
 tile.steel_block.name=Bloc D'Acier

@@ -1,2 +1,8 @@
 item.iron_gear.name=Iron Gear
+
+item.iron_bolt.name=Iron Bolt
+item.steel_bolt.name=Steel Bolt
+item.stone_bolt.name=Stone Bolt
+item.golden_bolt.name=Golden Bolt
+
 tile.steel_block.name=Steel Block
