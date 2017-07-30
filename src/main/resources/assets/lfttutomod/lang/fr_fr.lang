@@ -5,6 +5,11 @@ item.steel_bolt.name=Boulon En Acier
 item.stone_bolt.name=Boulon En Pierre
 item.golden_bolt.name=Boulon En Or
 
+item.mechanical_helmet.name=Casque Mécanique
+item.mechanical_chestplate.name=Plastron Mécanique
+item.mechanical_leggings.name=Jambières Mécaniques
+item.mechanical_boots.name=Bottes Mécaniques
+
 item.mechanical_food.name=Steak Mécanique
 
 tile.steel_block.name=Bloc D'Acier

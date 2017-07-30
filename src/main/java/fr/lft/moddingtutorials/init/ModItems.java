@@ -4,7 +4,10 @@ import fr.lft.moddingtutorials.LFTTutoMod;
 import fr.lft.moddingtutorials.items.ItemBolts;
 import fr.lft.moddingtutorials.items.ItemFoodLFTTuto;
 import fr.lft.moddingtutorials.items.ItemLFTTutoMod;
+import fr.lft.moddingtutorials.items.armors.ItemArmorMechanical;
+import fr.lft.utils.ArmorUtils;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
@@ -19,6 +22,14 @@ public class ModItems
 	public static final Item bolts = new ItemBolts("bolt");
 
 	public static final Item mechanical_food = new ItemFoodLFTTuto("mechanical_food", 4, 0.6f, false, false);
+
+	// Mechanical Armor
+
+	public static final Item mechanical_helmet = new ItemArmorMechanical("mechanical_helmet", ArmorUtils.mechanical_mat, EntityEquipmentSlot.HEAD);
+	public static final Item mechanical_chestplate = new ItemArmorMechanical("mechanical_chestplate", ArmorUtils.mechanical_mat, EntityEquipmentSlot.CHEST);
+	public static final Item mechanical_leggings = new ItemArmorMechanical("mechanical_leggings", ArmorUtils.mechanical_mat, EntityEquipmentSlot.LEGS);
+	public static final Item mechanical_boots = new ItemArmorMechanical("mechanical_boots", ArmorUtils.mechanical_mat, EntityEquipmentSlot.FEET);
+
 
 	//Initialisation des items
 	private static void initItems()
@@ -35,6 +46,11 @@ public class ModItems
 		registerItem(bolts);
 		registerItem(mechanical_food);
 
+		registerItem(mechanical_helmet);
+		registerItem(mechanical_chestplate);
+		registerItem(mechanical_leggings);
+		registerItem(mechanical_boots);
+
 	}
 
 	public static void registerItemRenders()
@@ -49,6 +65,11 @@ public class ModItems
 		}
 
 		registerItemRender(mechanical_food);
+
+		registerItemRender(mechanical_helmet);
+		registerItemRender(mechanical_chestplate);
+		registerItemRender(mechanical_leggings);
+		registerItemRender(mechanical_boots);
 
 	}
 
