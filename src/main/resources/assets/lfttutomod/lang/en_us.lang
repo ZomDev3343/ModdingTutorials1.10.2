@@ -7,4 +7,6 @@ item.steel_bolt.name=Steel Bolt
 item.stone_bolt.name=Stone Bolt
 item.golden_bolt.name=Golden Bolt
 
+item.mechanical_food.name=Mechanical Steak
+
 tile.steel_block.name=Steel Block

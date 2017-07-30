@@ -5,4 +5,6 @@ item.steel_bolt.name=Boulon En Acier
 item.stone_bolt.name=Boulon En Pierre
 item.golden_bolt.name=Boulon En Or
 
+item.mechanical_food.name=Steak Mécanique
+
 tile.steel_block.name=Bloc D'Acier

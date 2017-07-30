@@ -2,6 +2,7 @@ package fr.lft.moddingtutorials.init;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
 import fr.lft.moddingtutorials.items.ItemBolts;
+import fr.lft.moddingtutorials.items.ItemFoodLFTTuto;
 import fr.lft.moddingtutorials.items.ItemLFTTutoMod;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -17,6 +18,8 @@ public class ModItems
 
 	public static final Item bolts = new ItemBolts("bolt");
 
+	public static final Item mechanical_food = new ItemFoodLFTTuto("mechanical_food", 4, 0.6f, false, false);
+
 	//Initialisation des items
 	private static void initItems()
 	{
@@ -30,12 +33,13 @@ public class ModItems
 
 		registerItem(iron_gear);
 		registerItem(bolts);
+		registerItem(mechanical_food);
 
 	}
 
 	public static void registerItemRenders()
 	{
-		registerItemRender(iron_gear, 0);
+		registerItemRender(iron_gear);
 
 		for ( int i = 0; i < ItemBolts.subTypes.length; i++ )
 		{
@@ -44,6 +48,8 @@ public class ModItems
 
 		}
 
+		registerItemRender(mechanical_food);
+
 	}
 
 	private static void registerItem(Item item)
@@ -51,7 +57,7 @@ public class ModItems
 		GameRegistry.register(item);
 	}
 
-	private static void registerItemRender(Item item, int meta)
+	private static void registerItemRender(Item item)
 	{
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(LFTTutoMod.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
 	}
