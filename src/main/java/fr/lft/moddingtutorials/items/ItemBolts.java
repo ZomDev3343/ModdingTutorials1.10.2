@@ -1,5 +1,6 @@
 package fr.lft.moddingtutorials.items;
 
+import fr.lft.moddingtutorials.LFTTutoMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,6 +14,7 @@ public class ItemBolts extends ItemLFTTutoMod
 	{
 		super(name);
 		this.setHasSubtypes(true);
+		this.setCreativeTab(LFTTutoMod.modTab);
 	}
 
 	@Override

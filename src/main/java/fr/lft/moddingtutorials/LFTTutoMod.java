@@ -1,6 +1,8 @@
 package fr.lft.moddingtutorials;
 
+import fr.lft.moddingtutorials.ct.CreativeTabLFTTutoMod;
 import fr.lft.moddingtutorials.proxy.CommonProxy;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,6 +25,8 @@ public class LFTTutoMod
 
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
 	public static CommonProxy proxy;
+
+	public static final CreativeTabs modTab = new CreativeTabLFTTutoMod("lfttutomodTab");
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent e)
