@@ -1,5 +1,6 @@
 package fr.lft.moddingtutorials.proxy;
 
+import fr.lft.moddingtutorials.init.ModBlocks;
 import fr.lft.moddingtutorials.init.ModItems;
 
 public class ClientProxy extends CommonProxy
@@ -11,6 +12,7 @@ public class ClientProxy extends CommonProxy
 		super.preInit();
 
 		ModItems.registerItemRenders();
+		ModBlocks.registerBlockRenders();
 	}
 
 	@Override
