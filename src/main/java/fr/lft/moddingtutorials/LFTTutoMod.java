@@ -6,6 +6,7 @@ package fr.lft.moddingtutorials;
 
 import fr.lft.moddingtutorials.ct.CreativeTabLFTTutoMod;
 import fr.lft.moddingtutorials.events.EventOnSteelOreBreak;
+import fr.lft.moddingtutorials.handlers.LFTTutoFuelHandler;
 import fr.lft.moddingtutorials.proxy.CommonProxy;
 import fr.lft.moddingtutorials.utils.LFTTutoModUtils;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = LFTTutoMod.MODID, name = LFTTutoMod.NAME, version = LFTTutoMod.VERSION, acceptedMinecraftVersions = "[1.11, 1.11.2]")
 public class LFTTutoMod
@@ -44,6 +46,7 @@ public class LFTTutoMod
 		proxy.init();
 		LFTTutoModUtils.GenUtils.registerWorldGenerations();
 		MinecraftForge.EVENT_BUS.register(new EventOnSteelOreBreak());
+		GameRegistry.registerFuelHandler(new LFTTutoFuelHandler());
 	}
 
 	@Mod.EventHandler
