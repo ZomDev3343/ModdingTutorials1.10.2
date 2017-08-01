@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2017. ZomDev
+ */
+
 package fr.lft.moddingtutorials.init;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
@@ -6,8 +10,8 @@ import fr.lft.moddingtutorials.items.ItemFoodLFTTuto;
 import fr.lft.moddingtutorials.items.ItemLFTTutoMod;
 import fr.lft.moddingtutorials.items.ItemMechanicalSword;
 import fr.lft.moddingtutorials.items.armors.ItemArmorMechanical;
-import fr.lft.utils.ArmorUtils;
-import fr.lft.utils.ToolsUtils;
+import fr.lft.moddingtutorials.utils.ArmorUtils;
+import fr.lft.moddingtutorials.utils.ToolsUtils;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2017. ZomDev
+ */
+
 package fr.lft.moddingtutorials.init;
 
 import net.minecraft.init.Blocks;

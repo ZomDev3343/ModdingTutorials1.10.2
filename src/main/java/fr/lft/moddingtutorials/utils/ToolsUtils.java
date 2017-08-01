@@ -1,4 +1,8 @@
-package fr.lft.utils;
+/*
+ * Copyright (c) 2017. ZomDev
+ */
+
+package fr.lft.moddingtutorials.utils;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;

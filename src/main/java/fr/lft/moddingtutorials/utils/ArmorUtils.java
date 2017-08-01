@@ -1,4 +1,8 @@
-package fr.lft.utils;
+/*
+ * Copyright (c) 2017. ZomDev
+ */
+
+package fr.lft.moddingtutorials.utils;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
 import net.minecraft.init.SoundEvents;

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2017. ZomDev
+ */
+
 package fr.lft.moddingtutorials.init;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
@@ -16,8 +20,12 @@ public class ModBlocks
 
 	public static final Block steel_block = new BlockLFTTutoMod("steel_block", Material.IRON, 5f, 20f);
 
+	public static final Block steel_ore = new BlockLFTTutoMod("steel_ore", Material.ROCK, 5f, 20f);
+
 	private static void initBlocks()
 	{
+
+		steel_block.setHarvestLevel("pickaxe", 2);
 
 	}
 
@@ -28,11 +36,15 @@ public class ModBlocks
 
 		registerBlock(steel_block);
 
+		registerBlock(steel_ore);
+
 	}
 
 	public static void registerBlockRenders()
 	{
 		registerBlockRender(steel_block);
+
+		registerBlockRender(steel_ore);
 	}
 
 	private static void registerBlock(Block block)
