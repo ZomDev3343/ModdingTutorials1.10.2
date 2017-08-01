@@ -19,14 +19,11 @@ public class LFTTutoMod
 
 	public static final String CLIENT_PROXY = "fr.lft.moddingtutorials.proxy.ClientProxy";
 	public static final String SERVER_PROXY = "fr.lft.moddingtutorials.proxy.ServerProxy";
-
+	public static final CreativeTabs modTab = new CreativeTabLFTTutoMod("lfttutomodTab");
 	@Mod.Instance(MODID)
 	public static LFTTutoMod instance;
-
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
 	public static CommonProxy proxy;
-
-	public static final CreativeTabs modTab = new CreativeTabLFTTutoMod("lfttutomodTab");
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent e)

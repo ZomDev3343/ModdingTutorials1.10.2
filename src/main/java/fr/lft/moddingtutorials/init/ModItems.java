@@ -4,8 +4,10 @@ import fr.lft.moddingtutorials.LFTTutoMod;
 import fr.lft.moddingtutorials.items.ItemBolts;
 import fr.lft.moddingtutorials.items.ItemFoodLFTTuto;
 import fr.lft.moddingtutorials.items.ItemLFTTutoMod;
+import fr.lft.moddingtutorials.items.ItemMechanicalSword;
 import fr.lft.moddingtutorials.items.armors.ItemArmorMechanical;
 import fr.lft.utils.ArmorUtils;
+import fr.lft.utils.ToolsUtils;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -30,6 +32,9 @@ public class ModItems
 	public static final Item mechanical_leggings = new ItemArmorMechanical("mechanical_leggings", ArmorUtils.mechanical_mat, EntityEquipmentSlot.LEGS);
 	public static final Item mechanical_boots = new ItemArmorMechanical("mechanical_boots", ArmorUtils.mechanical_mat, EntityEquipmentSlot.FEET);
 
+	// Sword
+	public static final Item mechanical_sword = new ItemMechanicalSword("mechanical_sword", ToolsUtils.mechanical_mat_tools);
+
 
 	//Initialisation des items
 	private static void initItems()
@@ -51,6 +56,8 @@ public class ModItems
 		registerItem(mechanical_leggings);
 		registerItem(mechanical_boots);
 
+		registerItem(mechanical_sword);
+
 	}
 
 	public static void registerItemRenders()
@@ -70,6 +77,10 @@ public class ModItems
 		registerItemRender(mechanical_chestplate);
 		registerItemRender(mechanical_leggings);
 		registerItemRender(mechanical_boots);
+
+
+		// Dans le json n'oubliez pas de mettre le parent = "item/handheld" sinon vous aurez des problèmes de rotation
+		registerItemRender(mechanical_sword);
 
 	}
 
