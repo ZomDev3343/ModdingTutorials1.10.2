@@ -16,6 +16,8 @@ item.mechanical_food.name=Mechanical Steak
 
 item.mechanical_sword.name=Mechanical Sword
 
+item.mechanical_multi_tool.name=Mechanical Tool
+
 tile.steel_block.name=Steel Block
 
 enchantment.poison_damage=Poison Damage

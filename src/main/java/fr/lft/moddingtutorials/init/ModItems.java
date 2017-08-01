@@ -5,10 +5,7 @@
 package fr.lft.moddingtutorials.init;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
-import fr.lft.moddingtutorials.items.ItemBolts;
-import fr.lft.moddingtutorials.items.ItemFoodLFTTuto;
-import fr.lft.moddingtutorials.items.ItemLFTTutoMod;
-import fr.lft.moddingtutorials.items.ItemMechanicalSword;
+import fr.lft.moddingtutorials.items.*;
 import fr.lft.moddingtutorials.items.armors.ItemArmorMechanical;
 import fr.lft.moddingtutorials.utils.LFTTutoModUtils;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -38,6 +35,9 @@ public class ModItems
 	// Sword
 	public static final Item mechanical_sword = new ItemMechanicalSword("mechanical_sword", LFTTutoModUtils.ToolsUtils.mechanical_mat_tools);
 
+	// MultiTool
+	public static final Item mechanical_multi_tool = new ItemMechanicalMultiTool("mechanical_multi_tool", 1f, LFTTutoModUtils.ToolsUtils.mechanical_mat_tools.getDamageVsEntity(), LFTTutoModUtils.ToolsUtils.mechanical_mat_tools);
+
 
 	//Initialisation des items
 	private static void initItems()
@@ -60,6 +60,8 @@ public class ModItems
 		registerItem(mechanical_boots);
 
 		registerItem(mechanical_sword);
+
+		registerItem(mechanical_multi_tool);
 
 	}
 
@@ -84,6 +86,8 @@ public class ModItems
 
 		// Dans le json n'oubliez pas de mettre le parent = "item/handheld" sinon vous aurez des problèmes de rotation
 		registerItemRender(mechanical_sword);
+
+		registerItemRender(mechanical_multi_tool);
 
 	}
 
