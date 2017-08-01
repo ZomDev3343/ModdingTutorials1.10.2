@@ -5,7 +5,15 @@
 package fr.lft.moddingtutorials.items;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
+import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemSword;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.world.World;
 
 public class ItemMechanicalSword extends ItemSword
 {
@@ -17,5 +25,18 @@ public class ItemMechanicalSword extends ItemSword
 		this.setUnlocalizedName(name);
 
 		this.setCreativeTab(LFTTutoMod.modTab);
+	}
+
+	@Override
+	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
+	{
+
+		RayTraceResult rayTraceResult = player.rayTrace(20, 1);
+
+		worldIn.spawnEntity(new EntityLightningBolt(worldIn, rayTraceResult.getBlockPos().getX(), rayTraceResult.getBlockPos().getY(), rayTraceResult.getBlockPos().getZ(), true));
+
+		player.inventory.getCurrentItem().damageItem(10, player);
+
+		return EnumActionResult.FAIL;
 	}
 }
