@@ -2,6 +2,7 @@ package fr.lft.moddingtutorials.proxy;
 
 import fr.lft.moddingtutorials.init.ModBlocks;
 import fr.lft.moddingtutorials.init.ModItems;
+import fr.lft.moddingtutorials.init.ModRecipes;
 
 public class CommonProxy
 {
@@ -10,6 +11,8 @@ public class CommonProxy
 	{
 		ModItems.registerItems();
 		ModBlocks.registerBlocks();
+
+		ModRecipes.registerCraftingRecipes();
 	}
 
 	public void init()
