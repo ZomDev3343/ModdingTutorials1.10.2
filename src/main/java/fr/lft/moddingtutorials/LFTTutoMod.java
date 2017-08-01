@@ -5,9 +5,11 @@
 package fr.lft.moddingtutorials;
 
 import fr.lft.moddingtutorials.ct.CreativeTabLFTTutoMod;
+import fr.lft.moddingtutorials.events.EventOnSteelOreBreak;
 import fr.lft.moddingtutorials.proxy.CommonProxy;
 import fr.lft.moddingtutorials.utils.LFTTutoModUtils;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -41,6 +43,7 @@ public class LFTTutoMod
 	{
 		proxy.init();
 		LFTTutoModUtils.GenUtils.registerWorldGenerations();
+		MinecraftForge.EVENT_BUS.register(new EventOnSteelOreBreak());
 	}
 
 	@Mod.EventHandler
