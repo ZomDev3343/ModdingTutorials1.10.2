@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "lfttutomod:blocks/block_click_counter"
+  }
+}

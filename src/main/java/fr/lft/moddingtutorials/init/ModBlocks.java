@@ -5,6 +5,7 @@
 package fr.lft.moddingtutorials.init;
 
 import fr.lft.moddingtutorials.LFTTutoMod;
+import fr.lft.moddingtutorials.blocks.BlockClickCounter;
 import fr.lft.moddingtutorials.blocks.BlockLFTTutoMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -22,6 +23,8 @@ public class ModBlocks
 
 	public static final Block steel_ore = new BlockLFTTutoMod("steel_ore", Material.ROCK, 5f, 20f);
 
+	public static final Block click_counter_block = new BlockClickCounter("block_click_counter", Material.ROCK, 5f, 20f);
+
 	private static void initBlocks()
 	{
 
@@ -38,6 +41,8 @@ public class ModBlocks
 
 		registerBlock(steel_ore);
 
+		registerBlock(click_counter_block);
+
 	}
 
 	public static void registerBlockRenders()
@@ -45,6 +50,8 @@ public class ModBlocks
 		registerBlockRender(steel_block);
 
 		registerBlockRender(steel_ore);
+
+		registerBlockRender(click_counter_block);
 	}
 
 	private static void registerBlock(Block block)

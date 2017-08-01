@@ -4,6 +4,7 @@
 
 package fr.lft.moddingtutorials.blocks;
 
+import fr.lft.moddingtutorials.LFTTutoMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -17,5 +18,7 @@ public class BlockLFTTutoMod extends Block
 
 		this.setHardness(hardness);
 		this.setResistance(resistance);
+
+		this.setCreativeTab(LFTTutoMod.modTab);
 	}
 }
