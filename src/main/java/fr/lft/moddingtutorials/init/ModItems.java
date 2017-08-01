@@ -10,8 +10,7 @@ import fr.lft.moddingtutorials.items.ItemFoodLFTTuto;
 import fr.lft.moddingtutorials.items.ItemLFTTutoMod;
 import fr.lft.moddingtutorials.items.ItemMechanicalSword;
 import fr.lft.moddingtutorials.items.armors.ItemArmorMechanical;
-import fr.lft.moddingtutorials.utils.ArmorUtils;
-import fr.lft.moddingtutorials.utils.ToolsUtils;
+import fr.lft.moddingtutorials.utils.LFTTutoModUtils;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -31,13 +30,13 @@ public class ModItems
 
 	// Mechanical Armor
 
-	public static final Item mechanical_helmet = new ItemArmorMechanical("mechanical_helmet", ArmorUtils.mechanical_mat, EntityEquipmentSlot.HEAD);
-	public static final Item mechanical_chestplate = new ItemArmorMechanical("mechanical_chestplate", ArmorUtils.mechanical_mat, EntityEquipmentSlot.CHEST);
-	public static final Item mechanical_leggings = new ItemArmorMechanical("mechanical_leggings", ArmorUtils.mechanical_mat, EntityEquipmentSlot.LEGS);
-	public static final Item mechanical_boots = new ItemArmorMechanical("mechanical_boots", ArmorUtils.mechanical_mat, EntityEquipmentSlot.FEET);
+	public static final Item mechanical_helmet = new ItemArmorMechanical("mechanical_helmet", LFTTutoModUtils.ArmorUtils.mechanical_mat, EntityEquipmentSlot.HEAD);
+	public static final Item mechanical_chestplate = new ItemArmorMechanical("mechanical_chestplate", LFTTutoModUtils.ArmorUtils.mechanical_mat, EntityEquipmentSlot.CHEST);
+	public static final Item mechanical_leggings = new ItemArmorMechanical("mechanical_leggings", LFTTutoModUtils.ArmorUtils.mechanical_mat, EntityEquipmentSlot.LEGS);
+	public static final Item mechanical_boots = new ItemArmorMechanical("mechanical_boots", LFTTutoModUtils.ArmorUtils.mechanical_mat, EntityEquipmentSlot.FEET);
 
 	// Sword
-	public static final Item mechanical_sword = new ItemMechanicalSword("mechanical_sword", ToolsUtils.mechanical_mat_tools);
+	public static final Item mechanical_sword = new ItemMechanicalSword("mechanical_sword", LFTTutoModUtils.ToolsUtils.mechanical_mat_tools);
 
 
 	//Initialisation des items

@@ -15,3 +15,5 @@ item.mechanical_food.name=Steak Mécanique
 item.mechanical_sword.name=Epée Mécanique
 
 tile.steel_block.name=Bloc D'Acier
+
+enchantment.poison_damage=Dégats De Poison

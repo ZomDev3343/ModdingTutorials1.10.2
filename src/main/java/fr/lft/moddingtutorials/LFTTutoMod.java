@@ -6,7 +6,7 @@ package fr.lft.moddingtutorials;
 
 import fr.lft.moddingtutorials.ct.CreativeTabLFTTutoMod;
 import fr.lft.moddingtutorials.proxy.CommonProxy;
-import fr.lft.moddingtutorials.utils.GenUtils;
+import fr.lft.moddingtutorials.utils.LFTTutoModUtils;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -40,7 +40,7 @@ public class LFTTutoMod
 	public void init(FMLInitializationEvent e)
 	{
 		proxy.init();
-		GenUtils.registerWorldGenerations();
+		LFTTutoModUtils.GenUtils.registerWorldGenerations();
 	}
 
 	@Mod.EventHandler
