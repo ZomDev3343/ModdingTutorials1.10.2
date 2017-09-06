@@ -4,12 +4,14 @@
 
 package fr.zomdev.moddingtutorials.entity;
 
+import fr.zomdev.moddingtutorials.ZomTutoMod;
 import fr.zomdev.moddingtutorials.init.ModItems;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
@@ -36,6 +38,13 @@ public class EntityRobotPig extends EntityAnimal
 		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.66595D);
 		this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(5);
 
+	}
+
+	@Nullable
+	@Override
+	protected ResourceLocation getLootTable()
+	{
+		return new ResourceLocation(ZomTutoMod.MODID, "pig/robot");
 	}
 
 	@Nullable
